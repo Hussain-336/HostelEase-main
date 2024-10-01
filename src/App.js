@@ -1,21 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Nav from './components/Nav';
+import Herosection from './pages/Herosection';
+import Hostels from './pages/Hostels';
+import Header from './components/Header';
+import Progress from './pages/Progress';
+import Footer from './components/Footer';
+
+
+
+
+
 
 function App() {
   return (
     <>
-    <Nav/>
+    <Header/>
+    <Herosection/>
+    <Hostels/>
+    <Progress/>
+    <Footer/>
+    
+
     <div className="App">
-      <p className='text-3xl text-red-900'>HostelEase</p>
-      <p className='text-3xl text-yellow-800'> we provide you with the best Hotels in the town</p>
     </div>
-    <div>
-      <h1> hostels</h1>
-    </div>
+
     </>
       
   );
 }
-
 export default App;

@@ -18,16 +18,15 @@ const Hostels = () => {
 
       <div className="p-6  ">
         <h3 class="text-white text-xl font-bold ">Gilgit</h3>
-        <p class="mt-4 text-sm text-white leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
+        <p class="mt-4 text-sm text-white leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
          
         </p>
         <h2 className='mt-4 text-sm  text-white leading-relaxed font-semibold'>Hostels:10</h2>
-        
-         <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+         
          <Link className="  hover:text-[#b8cce0] text-[#ffffff] block font-semibold text-[15px]" to="/AllHostels">
         <button className='px-4 py-2 text-sm rounded-md font-bold text-white border-2 border-[#2e43ff] bg-[#2e43ff]  transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#b8cce0]'>Hostels</button>
               </Link>
-        </li>
+        
       </div>
     </div></div>
        <div className=''><div

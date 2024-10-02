@@ -11,7 +11,9 @@ import About from './components/About';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Studentform from './components/Studentform';
+import Dashboard from './services/Dashboard';
 import Layouts from './Layouts';
+import Dashboards from './Layouts/Dashboards';
 
 
 function App() {
@@ -49,7 +51,9 @@ function App() {
               } />
                 <Route path="/Header" element={<Header />} />
                 <Route path="/Footer" element={
-                  <Footer />
+                  <Dashboards>
+                    <Footer />
+                  </Dashboards>
                   } />
                 <Route path="/Signup" element={
                 <Signup /> } />
@@ -61,6 +65,13 @@ function App() {
               </Layouts>
               } 
                 />
+                 <Route path="/Dashboard" element={
+              <Dashboards>
+              <Dashboard />
+              </Dashboards>
+              } 
+                />
+
 
             </Routes>
         </Router>

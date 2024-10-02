@@ -9,7 +9,7 @@ const Header =()=>{
     return(
 
         <>
-             <header className='flex shadow-md py-4 px-4 sm:px-10 bg-[#85a4c0] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
+             <header className=' fixed flex shadow-md py-4 px-4 sm:px-10 bg-[#85a4c0] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
   <div className='flex flex-wrap items-center justify-between gap-5 w-full'>
     <a href="javascript:void(0)">
       <img src="./logo.png" alt="logo" className='w-14 h-14' />
@@ -40,7 +40,7 @@ const Header =()=>{
               </Link>
         </li>
         <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-        <Link className="  hover:text-[#b8cce0] text-[#ffffff] block font-semibold text-[15px]" to="/AllHostels">
+        <Link className="  hover:text-[#b8cce0] text-[#ffffff] block font-semibold text-[15px]" to="/Dashboard">
              All Hostels
               </Link>
         </li>

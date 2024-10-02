@@ -51,7 +51,7 @@ const Header =()=>{
               </Link>
         </li>
         <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-        <Link className="  hover:text-[#b8cce0] text-[#ffffff] block font-semibold text-[15px]" to="/Progress">
+        <Link className="  hover:text-[#b8cce0] text-[#ffffff] block font-semibold text-[15px]" to="/About">
               About Us
               </Link>
         </li>

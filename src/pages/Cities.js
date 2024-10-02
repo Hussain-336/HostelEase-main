@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 
+
 const Hostels = () => {
   return (
     <>
-  
+  {/* <Header/> */}
     <div className='bg-[#f7fafc] min-h-full border-t-8  '>
         <h1 className='relative flex justify-center items-center text-5xl text-blue-500 font-bold py-10'> Cities</h1>
         <div className='relativ flex justify-center items-center space-x-8'>

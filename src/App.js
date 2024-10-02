@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Cities from './pages/Cities';
-import Header from './layouts/Header';
-import Progress from './pages/Progress';
-import Footer from './layouts/Footer';
+import Header from './Layouts/Header';
+import Progressbar from './pages/Progress';
+import Footer from './Layouts/Footer';
 import AllHostels from './services/AllHostels';
 import About from './components/About';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Studentform from './components/Studentform';
-import layouts from './layouts';
+import Layouts from './Layouts';
+
 
 function App() {
   return (
@@ -19,30 +20,47 @@ function App() {
             <Router>
             <Routes>
                 <Route path="/" element={
-                 <layouts> <Home /></layouts>
+                 <Layouts>
+                   <Home />
+                   </Layouts>
                 }
                    />
-                <Route path="/About" element={
-                 <layouts> <About /></layouts>
-                } 
-                />
+                 <Route path="/About" element={
+                 <Layouts>
+                   <About />
+                   </Layouts>
+                }
+                   />
                 <Route path="/Cities" element={
-                  <layouts><Cities /></layouts>
-                } 
+                  <Layouts>
+                  <Cities />
+                  </Layouts>
+                  } 
                   />
                 <Route path="/AllHostels" element={
-                 <layouts> <AllHostels /></layouts>
+                 <Layouts>
+                 <AllHostels />
+                 </Layouts>
               } />
                 <Route path="/Progress" element={
-                  <layouts><Progress /></layouts>
+                  <Layouts>
+                  <Progressbar />
+                  </Layouts>
               } />
                 <Route path="/Header" element={<Header />} />
-                <Route path="/Footer" element={<Footer />} />
+                <Route path="/Footer" element={
+                  <Footer />
+                  } />
                 <Route path="/Signup" element={
-                <Signup />
-                } />
-               <Route path="/Login" element={<Login />} />
-               <Route path="/Studentform" element={<Studentform />} />
+                <Signup /> } />
+               <Route path="/Login" element={<Login />
+              } />
+               <Route path="/Studentform" element={
+              <Layouts>
+              <Studentform />
+              </Layouts>
+              } 
+                />
 
             </Routes>
         </Router>

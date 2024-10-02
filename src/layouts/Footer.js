@@ -1,5 +1,5 @@
 import React from 'react'
-// import Header from './Header'
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -51,13 +51,19 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-6 text-white">Contact Us</h4>
           <ul className="space-y-4">
             <li>
-              <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm">Email</a>
+            <Link className="  text-gray-300 hover:text-white text-sm" to="/About">
+             Email
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm">Phone</a>
+            <Link className="  text-gray-300 hover:text-white text-sm" to="/About">
+             Contact 
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm">Address</a>
+            <Link className="  text-gray-300 hover:text-white text-sm" to="/About">
+            Address
+              </Link>
             </li>
           </ul>
         </div>
@@ -66,13 +72,19 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-6 text-white">Information</h4>
           <ul className="space-y-4">
             <li>
-              <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm">About Us</a>
+              <Link className="  text-gray-300 hover:text-white text-sm" to="/About">
+             About Us
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm">Terms &amp; Conditions</a>
+            <Link className="  text-gray-300 hover:text-white text-sm" to="/About">
+             Terms & conditions
+              </Link>
             </li>
             <li>
-              <a href="javascript:void(0)" className="text-gray-300 hover:text-white text-sm">Privacy Policy</a>
+            <Link className="  text-gray-300 hover:text-white text-sm" to="/About">
+             Privacy policy
+              </Link>
             </li>
           </ul>
         </div>

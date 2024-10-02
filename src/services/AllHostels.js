@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AllHostels = () => {
   return (
     <>
-    <Header/>
+  
     <div className='bg-[#f7fafc] py-11 space-y-12 border-t-8 ' >
         <h1 className='relative flex justify-center items-center text-5xl font-bold text-blue-700 '>All Hostels</h1>
 
@@ -151,7 +151,7 @@ const AllHostels = () => {
 
     
     </div>
-    <Footer/>
+    
     </>
   )
 }

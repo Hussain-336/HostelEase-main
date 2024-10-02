@@ -1,16 +1,15 @@
 import React from "react";
-import Header from "../layouts/Header";
+
 import About from "../components/About";
 import Cities from './Cities';
 import AllHostels from "../services/AllHostels";
 import Progress from "./Progress";
-import Footer from "../layouts/Footer";
+
 
 
 const Home=()=>{
     return(
     <>
-  <Header/>
     <div className=" bg-[#f7fafc] text-blue-500 min-h-screen max-h-full py-56 font-bold  ">
         <h1 className="relative flex  items-center justify-center text-5xl">WELCOM TO <span className="px-4 bg-slate-600  rounded-full text-[#89c0ff]">HOSTELEASE</span></h1>
         <h2 className="relative flex  text-2xl items-center justify-center  text-blue-500 py-4">Find <span className="px-4 text-[#89c0ff] bg-slate-600  rounded-full">Best Hostel</span> Nearby you </h2>
@@ -31,7 +30,7 @@ const Home=()=>{
     <Cities/>
     <AllHostels/>
     <Progress/>
-    <Footer/>
+   
     
     
     </>
